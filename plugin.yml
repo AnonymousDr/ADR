@@ -1,0 +1,11 @@
+name: ServerInfo
+main: org.togglecraft.serverinfo.main.ServerInfo
+version: 1.0
+author: Anonymous_Dr
+commands:
+ serverinfo:
+  description: Main command of this plugin.
+  aliases: [lag]
+permissions:
+ serverinfo.command:
+  default: true
