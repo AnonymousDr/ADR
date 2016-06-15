@@ -20,7 +20,7 @@ public class ServerInfo extends JavaPlugin{
 	public boolean onCommand(CommandSender j, Command cmd, String label, String[] args){
 		if(cmd.getName().equalsIgnoreCase("serverinfo")){
 			if(!j.hasPermission("serverinfo.command")){
-				ChatColor.translateAlternateColorCodes('&',getConfig().getString("nopermission"));
+				j.sendMessage(ChatColor.RED+"You don't have permissions for this!");
 				return true;
 			}
 			j.sendMessage(ChatColor.AQUA+"TPS: "+getTPS());
