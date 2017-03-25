@@ -1,0 +1,34 @@
+name: MobMoney
+main: org.togglecraft.MobMoney.mobs
+version: 1.2.3
+authors: [Anonymous_Dr, mjl1010]
+description: Kill mobs to get money.
+depend: [Vault]
+commands:
+ mobmoney:
+  description: Reload the config file of Mob Cash.
+ mbtoggle:
+  description: Toggle the message received at kill a entity to get money.
+  aliases: [mb]
+permissions:
+ mobmoney.reload:
+  description: Give's permission to reload the config.
+  default: op
+ mobmoney.disableworld:
+  description: Give's permission to disable a world.
+  default: op
+ mobmoney.enableworld:
+  description: Give's permission to enable a world.
+  default: op
+ mobmoney.help:
+  description: Give's permission to execute a command.
+  default: op
+ mobmoney.get:
+  description: Give's permission to get money killing mobs.
+  default: true
+ mobmoney.debug:
+  description: Receive a message with the name of the entity's killed.
+  default: op
+ mobmoney.toggle:
+  description: Give's permission to toggle the message received at kill a entity to get money.
+  default: true
