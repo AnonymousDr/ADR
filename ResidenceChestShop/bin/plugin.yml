@@ -1,0 +1,5 @@
+name: ResidenceChestShop
+main: com.anderhurtado.java.spigot.residence.chestshop.ResCS
+author: Anonymous_Dr
+version: 1.0
+depend: [Vault, Residence, ChestShop]
