@@ -52,8 +52,10 @@ public class ResCS extends JavaPlugin{
 				if(e.getTransactionType()==TransactionType.SELL){
 					ResidenceBank RB=resAPI.getByLoc(e.getSign().getLocation()).getBank();
 					int P=Integer.valueOf(new DecimalFormat("#").format(e.getPrice()));
-					if(RB.hasEnough(P))
-					eco.depositPlayer(e.getOwner(),P);
+					if(!RB.hasEnough(P)){
+						e.setCancelled(TransactionOutcome.SHOP_DOES_NOT_HAVE_ENOUGH_MONEY);
+						return;
+					}eco.depositPlayer(e.getOwner(),P);
 					RB.subtract(P);
 				}
 			}
