@@ -1,5 +1,10 @@
 name: ResidenceChestShop
 main: com.anderhurtado.java.spigot.residence.chestshop.ResCS
 author: Anonymous_Dr
-version: 1.0
+version: 1.1
 depend: [Vault, Residence, ChestShop]
+permissions:
+    rescs.create:
+        description: Use the plugin and create shops.
+        children:
+            ChestShop.name.#Residence: true
