@@ -1,0 +1,18 @@
+name: CommandBlockEditPlus
+main: cat.adr.commandblock.editorplus.CBEP
+version: 1.0
+author: Anonymous_Dr
+commands:
+ read:
+  description: Read a command block.
+ edit:
+  description: Write in a command block.
+  aliases: [e]
+ continue:
+  description: Continue writing in a command block.
+  aliases: [c]
+ space:
+  description: Continue writing in a command block starting by an space.
+  aliases: [s]
+ placecb:
+  description: Place command blocks.
